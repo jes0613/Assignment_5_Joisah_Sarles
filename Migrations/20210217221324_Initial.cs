@@ -17,7 +17,7 @@ namespace Assignment_5_Joisah_Sarles.Migrations
                     publisher = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     isbn = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     category = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    price = table.Column<float>(type: "real", nullable: false)
+                    price = table.Column<double>(type: "float", nullable: false)
                 },
                 constraints: table =>
                 {

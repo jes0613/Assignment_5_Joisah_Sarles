@@ -37,8 +37,8 @@ namespace Assignment_5_Joisah_Sarles.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<float>("price")
-                        .HasColumnType("real");
+                    b.Property<double>("price")
+                        .HasColumnType("float");
 
                     b.Property<string>("publisher")
                         .IsRequired()

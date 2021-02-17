@@ -60,6 +60,9 @@ namespace Assignment_5_Joisah_Sarles
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            SeedData.EnsurePopulated(app);
+
         }
     }
 }

@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Assignment_5_Joisah_Sarles.Migrations
 {
     [DbContext(typeof(FamazonDbContext))]
-    [Migration("20210217211543_Initial")]
+    [Migration("20210217221324_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -39,8 +39,8 @@ namespace Assignment_5_Joisah_Sarles.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<float>("price")
-                        .HasColumnType("real");
+                    b.Property<double>("price")
+                        .HasColumnType("float");
 
                     b.Property<string>("publisher")
                         .IsRequired()
