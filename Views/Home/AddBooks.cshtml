@@ -1,0 +1,48 @@
+﻿@{
+    ViewBag.Title = "Provo's Top 5 Restaurants";
+    ViewBag.Dash = " - ";
+    ViewBag.SubTitle = "Suggest a Restaurant";
+}
+
+@model Assignment_4_Josiah_Sarles.Models.AddRestaurant 
+
+<h1>@ViewBag.SubTitle Here</h1>
+
+<p>Use the form below to add a new restaurant to my list</p>
+
+<div>
+    <form asp-action="RestaurantsForm" method="post">
+        <div>
+            <label asp-for="rank">
+                Rank
+            </label>
+            <input asp-for="rank"/>
+        </div>
+
+        <div>
+            <label asp-for="name">
+                Restaurant Name
+            </label>
+            <input asp-for="name"/>
+        </div>
+
+        <div>
+            <label asp-for="favdish">
+                Favorite Dish
+            </label>
+            <input asp-for="favdish"/>
+        </div>
+
+        <div>
+            <label asp-for="phone">
+                Restaurant Phone #
+            </label>
+            <input asp-for="phone"/>
+        </div>
+
+        <button type="submit">Add Restaurant</button>
+        <div asp-validation-summary="All">
+
+        </div>
+    </form>
+</div>

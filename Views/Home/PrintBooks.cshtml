@@ -1,0 +1,54 @@
+﻿@{
+    ViewBag.Title = "Provo's Top 5 Restaurants";
+    ViewBag.Dash = " - ";
+    ViewBag.SubTitle = "Suggested Restaurant List";
+}
+
+@model IEnumerable<Assignment_4_Josiah_Sarles.Models.AddRestaurant>
+
+<h1>@ViewBag.SubTitle</h1>
+
+<p>
+    Here is a list of all the restaurants added so far (while the app is running)
+    <br /><br />
+</p>
+
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    Rank
+                </th>
+                <th>
+                    Restaurant Name
+                </th>
+                <th>
+                    Favorite Dish
+                </th>
+                <th>
+                    Restaurant Phone #
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Assignment_4_Josiah_Sarles.Models.AddRestaurant x in Model)
+            {
+            <tr>
+                <td>
+                    @x.rank
+                </td>
+                <td>
+                    @x.name
+                </td>
+                <td>
+                    @x.favdish
+                </td>
+                <td>
+                    @x.phone
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
