@@ -4,8 +4,6 @@
     ViewBag.SubTitle = "Suggested Restaurant List";
 }
 
-@model IEnumerable<Assignment_4_Josiah_Sarles.Models.AddRestaurant>
-
 <h1>@ViewBag.SubTitle</h1>
 
 <p>
@@ -32,8 +30,8 @@
             </tr>
         </thead>
         <tbody>
-            @foreach (Assignment_4_Josiah_Sarles.Models.AddRestaurant x in Model)
-            {
+            @*@foreach (Assignment_4_Josiah_Sarles.Models.AddRestaurant x in Model)*@
+            @*{
             <tr>
                 <td>
                     @x.rank
@@ -48,7 +46,7 @@
                     @x.phone
                 </td>
             </tr>
-            }
+            }*@
         </tbody>
     </table>
 </div>
