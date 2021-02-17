@@ -26,11 +26,13 @@ namespace Assignment_5_Joisah_Sarles
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            //Added the services that we need to run the databases
             services.AddDbContext<FamazonDbContext>(options =>
            {
                options.UseSqlServer(Configuration["ConnectionStrings:FamazonConnection"]);
            });
-
+            // Heres the second service added
             services.AddScoped<IFamazonRepo, EFFamazonRepo>();
         }
 

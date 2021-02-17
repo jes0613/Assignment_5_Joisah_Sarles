@@ -12,14 +12,17 @@ namespace Assignment_5_Joisah_Sarles.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        //Added a private repository
         private IFamazonRepo _repo;
 
+        // recieves the logger and the repository then sets the private values
         public HomeController(ILogger<HomeController> logger, IFamazonRepo repo)
         {
             _logger = logger;
             _repo = repo;
         }
 
+        // sends the _repo.books to the view to be used to print on the index page
         public IActionResult Index()
         {
             return View(_repo.books);

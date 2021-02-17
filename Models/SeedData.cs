@@ -10,6 +10,7 @@ namespace Assignment_5_Joisah_Sarles.Models
 {
     public class SeedData
     {
+        //Here's the stuff to populate the database.
         public static void EnsurePopulated(IApplicationBuilder application)
         {
             FamazonDbContext context = application.ApplicationServices.CreateScope().ServiceProvider.GetRequiredService<FamazonDbContext>();
@@ -22,7 +23,7 @@ namespace Assignment_5_Joisah_Sarles.Models
             if(!context.books.Any())
             {
                 context.books.AddRange(
-
+                // All of the books from the spec that are seeded to the database.
                     new Book
                     {
                         title = "Les Miserables",
