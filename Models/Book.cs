@@ -26,7 +26,7 @@ namespace Assignment_5_Joisah_Sarles.Models
         public string category { get; set; }
 
         [Required]
-        public int price { get; set; }
+        public float price { get; set; }
 
 
 

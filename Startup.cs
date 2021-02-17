@@ -30,6 +30,8 @@ namespace Assignment_5_Joisah_Sarles
            {
                options.UseSqlServer(Configuration["ConnectionStrings:FamazonConnection"]);
            });
+
+            services.AddScoped<IFamazonRepo, EFFamazonRepo>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
