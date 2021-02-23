@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Assignment_5_Joisah_Sarles.Models
+namespace Assignment_6_Joisah_Sarles.Models
 {
     public class SeedData
     {

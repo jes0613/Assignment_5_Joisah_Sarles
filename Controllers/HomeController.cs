@@ -1,4 +1,4 @@
-﻿using Assignment_5_Joisah_Sarles.Models;
+﻿using Assignment_6_Joisah_Sarles.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -7,7 +7,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Assignment_5_Joisah_Sarles.Controllers
+namespace Assignment_6_Joisah_Sarles.Controllers
 {
     public class HomeController : Controller
     {

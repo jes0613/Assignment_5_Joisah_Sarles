@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Assignment_5_Joisah_Sarles.Models
+namespace Assignment_6_Joisah_Sarles.Models
 {
     //The book class, has the fields needed for the projects as listed in the spec
     //All the fields are required and the bookId is set as the Key
